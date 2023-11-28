@@ -26,10 +26,10 @@
 # Try to represent the same store items using a class!
 
 class StoreItem
-  def initialize (brand, color, price)
-    @brand = brand
-    @color = color
-    @price = price
+  def initialize (option)
+    @brand = option[:brand]
+    @color = option[:color]
+    @price = option[:price]
   end
 
   def print_info
@@ -45,9 +45,9 @@ class StoreItem
   end
 end
 
-itemOne = StoreItem.new("Lego", "Red", 20)
-itemTwo = StoreItem.new("Nike", "Brown", 200)
-itemThree = StoreItem.new("Adidas", "Yellow", 250)
+itemOne = StoreItem.new({brand: "Lego", color: "Red", price: 20})
+itemTwo = StoreItem.new({brand: "Nike", color: "Brown", price: 200})
+itemThree = StoreItem.new({brand: "Adidas", color: "Yellow", price: 250})
 itemOne.print_info
 itemTwo.print_info
 itemThree.print_info
