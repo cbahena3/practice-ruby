@@ -47,7 +47,7 @@ end
 
 itemOne = StoreItem.new({brand: "Lego", color: "Red", price: 20})
 itemTwo = StoreItem.new({brand: "Nike", color: "Brown", price: 200})
-itemThree = StoreItem.new({brand: "Adidas", color: "Yellow", price: 250})
+itemThree = StoreItem.new({brand: "Adidas", color: "Yellow", price:250})
 itemOne.print_info
 itemTwo.print_info
 itemThree.print_info
